@@ -35,7 +35,7 @@
     }
 
     .accordion-button:after {
-        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
     }
 
     .accordion-button {
@@ -49,6 +49,7 @@
     .accordion-button:hover {
       color: white;
     }
+
     .fixed-size-btn {
       width: 96px;
       text-align: center;
@@ -93,14 +94,17 @@
     .table {
       border-collapse: separate;
       border-spacing: 0;
-      border-radius: 10px; /* Rounded corners for the entire table */
-      overflow: hidden; /* Ensures the corners are clipped */
+      border-radius: 10px;
+      /* Rounded corners for the entire table */
+      overflow: hidden;
+      /* Ensures the corners are clipped */
     }
 
     /* Ensure that borders are applied properly */
     .table th,
     .table td {
-      border: 1px solid #dee2e620; /* Ensure the borders are visible */
+      border: 1px solid #dee2e620;
+      /* Ensure the borders are visible */
     }
 
     /* Rounded corners for the thead and tbody sections */
@@ -137,7 +141,7 @@
       <div class="container-fluid md:justify-content-center">
         <a class="navbar-brand" href="/">
           <img class="navbar-icon" style="height: 2rem;" src="img/logo-load.svg" alt="Kohl's Admin">
-       </a>
+        </a>
         <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -147,17 +151,17 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="https://docs.kohl.gg/docs/intro">
-              Docs
+                Docs
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://docs.kohl.gg/api/MainModule">
-              API
+                API
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="faq">
-              FAQ </a>
+                FAQ </a>
             </li>
           </ul>
           <div class="d-flex mx-2 px-2 justify-content-between">
@@ -184,190 +188,227 @@
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#donate" aria-expanded="false" aria-controls="donate" href="#donate">
+            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#donate" aria-expanded="false" aria-controls="donate" href="#donate">
               How can I donate?
             </a>
           </h2>
-          <div id="donate" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div id="donate" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               <div class="pb-4">
-                You can donate by clicking on the buttons below. Each game pass provides different benefits. <span class="text-success-emphasis">*</span>
+                You can donate by clicking on the buttons below. Each game pass provides different benefits. <span
+                  class="text-success-emphasis">*</span>
               </div>
-                <div class="table-responsive">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th class="text-center">
-                          <a href="https://www.roblox.com/game-pass/5391355/Tip" class="text-white text-decoration-none fixed-size-btn d-block mx-auto">Tip</a>
-                        </th>
-                        <th class="text-center">
-                          <a href="https://www.roblox.com/game-pass/5391356/Donation" class="text-white text-decoration-none fixed-size-btn d-block mx-auto">Donation</a>
-                        </th>
-                        <th class="text-center">
-                          <a href="https://www.roblox.com/game-pass/5391359/VIP-Donation" class="text-success-emphasis text-decoration-none fixed-size-btn d-block mx-auto">VIP Donation</a>
-                        </th>
-                        <th class="text-center">
-                          <a href="https://www.roblox.com/game-pass/5391361/Super-VIP-Donation" class="text-success text-decoration-none fixed-size-btn d-block mx-auto">Super VIP Donation</a>
-                        </th>
-                        <th class="text-center">
-                          <a href="https://www.roblox.com/game-pass/5411126/Premium-Donation" class="golden-text text-decoration-none fixed-size-btn d-block mx-auto">Premium Donation</a>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Trail</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td>VIP commands</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td>Crown</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td>:crowncolor</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td>Shine effect</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td><span class="rainbow-text">Rainbow Crown</span></td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td><span class="rainbow-text">:crownrainbow</span></td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td><span class="golden-text">Golden Discord role</span></td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="xmark-cell">&#10008;</td>
-                        <td class="checkmark-cell">&#10004;</td>
-                      </tr>
-                      <tr>
-                        <td class="text-success-emphasis"></td>
-                        <td class="price-cell">
-                          <a href="https://www.roblox.com/game-pass/5391355/Tip" class="btn btn-success fixed-size-btn d-block mx-auto m-2">
-                            <img src="img/robux.svg" alt="Robux" class="robux-icon"> 10
-                          </a>                        </td>
-                        <td class="price-cell">
-                          <a href="https://www.roblox.com/game-pass/5391356/Donation" class="btn btn-success fixed-size-btn d-block mx-auto m-2">
-                            <img src="img/robux.svg" alt="Robux" class="robux-icon"> 50
-                          </a>                        </td>
-                        <td class="price-cell">
-                          <a href="https://www.roblox.com/game-pass/5391359/VIP-Donation" class="btn btn-success fixed-size-btn d-block mx-auto m-2">
-                            <img src="img/robux.svg" alt="Robux" class="robux-icon"> 400
-                          </a>                        </td>
-                        <td class="price-cell">
-                          <a href="https://www.roblox.com/game-pass/5391361/Super-VIP-Donation" class="btn btn-success fixed-size-btn d-block mx-auto m-2">
-                            <img src="img/robux.svg" alt="Robux" class="robux-icon"> 800
-                          </a>                        </td>
-                        <td class="price-cell">
-                          <a href="https://www.roblox.com/game-pass/5411126/Premium-Donation" class="btn btn-success fixed-size-btn d-block mx-auto m-2">
-                            <img src="img/robux.svg" alt="Robux" class="robux-icon"> 1600
-                          </a>                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th class="text-center">
+                        <a href="https://www.roblox.com/game-pass/5391355/Tip"
+                          class="text-white text-decoration-none fixed-size-btn d-block mx-auto">Tip</a>
+                      </th>
+                      <th class="text-center">
+                        <a href="https://www.roblox.com/game-pass/5391356/Donation"
+                          class="text-white text-decoration-none fixed-size-btn d-block mx-auto">Donation</a>
+                      </th>
+                      <th class="text-center">
+                        <a href="https://www.roblox.com/game-pass/5391359/VIP-Donation"
+                          class="text-success-emphasis text-decoration-none fixed-size-btn d-block mx-auto">VIP
+                          Donation</a>
+                      </th>
+                      <th class="text-center">
+                        <a href="https://www.roblox.com/game-pass/5391361/Super-VIP-Donation"
+                          class="text-success text-decoration-none fixed-size-btn d-block mx-auto">Super VIP
+                          Donation</a>
+                      </th>
+                      <th class="text-center">
+                        <a href="https://www.roblox.com/game-pass/5411126/Premium-Donation"
+                          class="golden-text text-decoration-none fixed-size-btn d-block mx-auto">Premium Donation</a>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Trail</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td>VIP commands</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td>Crown</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td>:crowncolor</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td>Shine effect</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rainbow-text">Rainbow Crown</span></td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rainbow-text">:crownrainbow</span></td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td><span class="golden-text">Golden Discord role</span></td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="xmark-cell">&#10008;</td>
+                      <td class="checkmark-cell">&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-success-emphasis"></td>
+                      <td class="price-cell">
+                        <a href="https://www.roblox.com/game-pass/5391355/Tip"
+                          class="btn btn-success fixed-size-btn d-block mx-auto m-2">
+                          <img src="img/robux.svg" alt="Robux" class="robux-icon"> 10
+                        </a>
+                      </td>
+                      <td class="price-cell">
+                        <a href="https://www.roblox.com/game-pass/5391356/Donation"
+                          class="btn btn-success fixed-size-btn d-block mx-auto m-2">
+                          <img src="img/robux.svg" alt="Robux" class="robux-icon"> 50
+                        </a>
+                      </td>
+                      <td class="price-cell">
+                        <a href="https://www.roblox.com/game-pass/5391359/VIP-Donation"
+                          class="btn btn-success fixed-size-btn d-block mx-auto m-2">
+                          <img src="img/robux.svg" alt="Robux" class="robux-icon"> 400
+                        </a>
+                      </td>
+                      <td class="price-cell">
+                        <a href="https://www.roblox.com/game-pass/5391361/Super-VIP-Donation"
+                          class="btn btn-success fixed-size-btn d-block mx-auto m-2">
+                          <img src="img/robux.svg" alt="Robux" class="robux-icon"> 800
+                        </a>
+                      </td>
+                      <td class="price-cell">
+                        <a href="https://www.roblox.com/game-pass/5411126/Premium-Donation"
+                          class="btn btn-success fixed-size-btn d-block mx-auto m-2">
+                          <img src="img/robux.svg" alt="Robux" class="robux-icon"> 1600
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
-                </div>
-                <p class="text-success-emphasis">* These perks are only available at participating games.</p>
+              </div>
+              <p class="text-success-emphasis">* These perks are only available at participating games.</p>
 
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#install" aria-expanded="false" aria-controls="install" href="#install">
-                How to add Kohl's Admin Infinite to my game?
-              </a>
-            </h2>
-            <div id="install" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                <ol>
-                  <li>Go to the Kohl's Admin Infinite model page on Roblox:
-                    <a href="https://www.roblox.com/library/172732271/Kohls-Admin-Infinite" class="text-decoration-none">Click here</a>.
-                  </li>
-                  <li>In Roblox Studio, open your game.</li>
-                  <li>Insert the Kohl's Admin Infinite model into your game by placing it in the <strong>Workspace</strong> or <strong>ServerScriptService</strong>.</li>
-                  <li>Publish your game to Roblox.</li>
-                  <li>To verify that Kohl's Admin Infinite is properly installed, visit your game directly from the Roblox website. Note that testing from Roblox Studio may not work correctly.</li>
-                  <li>Be cautious and ensure that you are using the correct model. There are many malicious and illegitimate copies of Kohl's Admin Infinite designed to trick users into adding a backdoor to their game. Always use the official model linked above.</li>
-                </ol>
-              </div>
+          <h2 class="accordion-header" id="headingTwo">
+            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#install" aria-expanded="false" aria-controls="install" href="#install">
+              How to add Kohl's Admin Infinite to my game?
+            </a>
+          </h2>
+          <div id="install" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <ol>
+                <li>Go to the Kohl's Admin Infinite model page on Roblox:
+                  <a href="https://www.roblox.com/library/172732271/Kohls-Admin-Infinite"
+                    class="text-decoration-none">Click here</a>.
+                </li>
+                <li>In Roblox Studio, open your game.</li>
+                <li>Insert the Kohl's Admin Infinite model into your game by placing it in the
+                  <strong>Workspace</strong> or <strong>ServerScriptService</strong>.
+                </li>
+                <li>Publish your game to Roblox.</li>
+                <li>To verify that Kohl's Admin Infinite is properly installed, visit your game directly from the Roblox
+                  website. Note that testing from Roblox Studio may not work correctly.</li>
+                <li>Be cautious and ensure that you are using the correct model. There are many malicious and
+                  illegitimate copies of Kohl's Admin Infinite designed to trick users into adding a backdoor to their
+                  game. Always use the official model linked above.</li>
+              </ol>
             </div>
           </div>
+        </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#broken" aria-expanded="false" aria-controls="broken" href="#broken">
+            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#broken" aria-expanded="false" aria-controls="broken" href="#broken">
               Is Kohl's Admin Infinite broken right now?
             </a>
           </h2>
-          <div id="broken" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div id="broken" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Only if it does not work in the official testing place. If you are experiencing issues, please contact us in the general chat or through direct messages!
+              Only if it does not work in the official testing place. If you are experiencing issues, please contact us
+              in the general chat or through direct messages!
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
-            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infinite-studios" aria-expanded="false" aria-controls="infinite-studios" href="#infinite-studios">
+            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#infinite-studios" aria-expanded="false" aria-controls="infinite-studios"
+              href="#infinite-studios">
               What is Infinite Studios' relationship with Kohl's Admin Infinite?
             </a>
           </h2>
-          <div id="infinite-studios" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div id="infinite-studios" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Infinite Studios is a development group made by Kohl. Kohl's Admin Infinite is made solely by Kohl under the Infinite branding.
+              Infinite Studios is a development group made by Kohl. Kohl's Admin Infinite is made solely by Kohl under
+              the Infinite branding.
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
-            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#developers" aria-expanded="false" aria-controls="developers" href="#developers">
+            <a class="accordion-button text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#developers" aria-expanded="false" aria-controls="developers" href="#developers">
               Can Kohl's Admin Infinite developers or Infinite Studios members use commands in my game?
             </a>
           </h2>
-          <div id="developers" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div id="developers" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               They can use the purchasable VIP commands, if they are not disabled.
             </div>

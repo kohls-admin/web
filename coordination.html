@@ -1,425 +1,374 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-19NPCLMX36"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
 
-			gtag("config", "G-19NPCLMX36");
-		</script>
-		<title>Coordination | Kohl's Admin</title>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Our community values a positive and respectful environment where everyone feels welcome and supported. As a volunteer staff member, you play a crucial role in upholding our community standards and ensuring a smooth experience for all members."
-		/>
-		<meta
-			name="keywords"
-			content="Kohl, Kohl's Admin, Kohl's Admin Infinite, Roblox admin commands, Kohl's admin commands, game administration, admin commands, game moderation, Roblox development"
-		/>
-		<meta name="robots" content="index, follow" />
-		<link rel="icon" href="img/icon-bg.svg" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		<!-- font awesome -->
-		<script
-			src="https://kit.fontawesome.com/5e28355cc9.js"
-			crossorigin="anonymous"
-		></script>
-		<style>
-			.accordion-button:focus {
-				box-shadow: none;
-			}
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-19NPCLMX36"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
 
-			.accordion-button:not(.collapsed) {
-				color: white;
-				background-color: #000000;
-			}
+		gtag("config", "G-19NPCLMX36");
+	</script>
+	<title>Coordination | Kohl's Admin</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description"
+		content="Our community values a positive and respectful environment where everyone feels welcome and supported. As a volunteer staff member, you play a crucial role in upholding our community standards and ensuring a smooth experience for all members." />
+	<meta name="keywords"
+		content="Kohl, Kohl's Admin, Kohl's Admin Infinite, Roblox admin commands, Kohl's admin commands, game administration, admin commands, game moderation, Roblox development" />
+	<meta name="robots" content="index, follow" />
+	<link rel="icon" href="img/icon-bg.svg" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/5e28355cc9.js" crossorigin="anonymous"></script>
+	<style>
+		.accordion-button:focus {
+			box-shadow: none;
+		}
 
-			.accordion-button:after {
-				background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-			}
+		.accordion-button:not(.collapsed) {
+			color: white;
+			background-color: #000000;
+		}
 
-			.accordion-button {
-				color: white;
-			}
+		.accordion-button:after {
+			background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+		}
 
-			.accordion-button.collapsed {
-				background-color: #000000;
-			}
+		.accordion-button {
+			color: white;
+		}
 
-			.accordion-button:hover {
-				color: white;
-			}
-			.fixed-size-btn {
-				width: 96px;
-				text-align: center;
-			}
+		.accordion-button.collapsed {
+			background-color: #000000;
+		}
 
-			.rainbow-text {
-				background: linear-gradient(
-					90deg,
+		.accordion-button:hover {
+			color: white;
+		}
+
+		.fixed-size-btn {
+			width: 96px;
+			text-align: center;
+		}
+
+		.rainbow-text {
+			background: linear-gradient(90deg,
 					red,
 					orange,
 					yellow,
 					green,
 					rgb(0, 136, 255),
 					rgb(149, 0, 255),
-					violet
-				);
-				-webkit-background-clip: text;
-				color: transparent;
-			}
+					violet);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
 
-			.golden-text {
-				color: gold;
-				font-weight: bold;
-			}
+		.golden-text {
+			color: gold;
+			font-weight: bold;
+		}
 
-			.checkmark-cell {
-				background-color: rgb(0, 59, 9) !important;
-				color: rgb(155, 255, 155) !important;
-				text-align: center;
-			}
+		.checkmark-cell {
+			background-color: rgb(0, 59, 9) !important;
+			color: rgb(155, 255, 155) !important;
+			text-align: center;
+		}
 
-			.xmark-cell {
-				background-color: rgb(59, 0, 9) !important;
-				color: rgb(255, 155, 155) !important;
-				text-align: center;
-			}
+		.xmark-cell {
+			background-color: rgb(59, 0, 9) !important;
+			color: rgb(255, 155, 155) !important;
+			text-align: center;
+		}
 
-			.price-cell {
-				/* color: green !important; */
-				text-align: center;
-			}
+		.price-cell {
+			/* color: green !important; */
+			text-align: center;
+		}
 
-			.robux-icon {
-				width: 12px;
-				height: 12px;
-				vertical-align: middle;
-			}
+		.robux-icon {
+			width: 12px;
+			height: 12px;
+			vertical-align: middle;
+		}
 
-			/* Apply rounded borders to the entire table */
-			.table {
-				border-collapse: separate;
-				border-spacing: 0;
-				border-radius: 10px; /* Rounded corners for the entire table */
-				overflow: hidden; /* Ensures the corners are clipped */
-			}
+		/* Apply rounded borders to the entire table */
+		.table {
+			border-collapse: separate;
+			border-spacing: 0;
+			border-radius: 10px;
+			/* Rounded corners for the entire table */
+			overflow: hidden;
+			/* Ensures the corners are clipped */
+		}
 
-			/* Ensure that borders are applied properly */
-			.table th,
-			.table td {
-				border: 1px solid #dee2e620; /* Ensure the borders are visible */
-			}
+		/* Ensure that borders are applied properly */
+		.table th,
+		.table td {
+			border: 1px solid #dee2e620;
+			/* Ensure the borders are visible */
+		}
 
-			/* Rounded corners for the thead and tbody sections */
-			.table thead th:first-child {
-				border-top-left-radius: 10px;
-			}
+		/* Rounded corners for the thead and tbody sections */
+		.table thead th:first-child {
+			border-top-left-radius: 10px;
+		}
 
-			.table thead th:last-child {
-				border-top-right-radius: 10px;
-			}
+		.table thead th:last-child {
+			border-top-right-radius: 10px;
+		}
 
-			.table tbody tr:last-child td:first-child {
-				border-bottom-left-radius: 10px;
-			}
+		.table tbody tr:last-child td:first-child {
+			border-bottom-left-radius: 10px;
+		}
 
-			.table tbody tr:last-child td:last-child {
-				border-bottom-right-radius: 10px;
-			}
+		.table tbody tr:last-child td:last-child {
+			border-bottom-right-radius: 10px;
+		}
 
-			/* Robux icon */
-			.robux-icon {
-				width: 16px;
-				height: 16px;
-				vertical-align: middle;
-			}
-		</style>
-	</head>
+		/* Robux icon */
+		.robux-icon {
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+		}
+	</style>
+</head>
 
-	<body data-bs-theme="dark">
-		<header class="sticky top-0 z-5 pt-5 pb-5 bg-black text-white">
-			<nav class="navbar navbar-expand-lg bg-black fixed-top">
-				<div class="container-fluid md:justify-content-center">
-					<a class="navbar-brand" href="/">
-						<img
-							class="navbar-icon"
-							style="height: 2rem"
-							src="img/logo-load.svg"
-							alt="Kohl's Admin"
-						/>
-					</a>
-					<button
-						class="btn btn-light d-lg-none"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="text-uppercase fw-bolder">Menu</span>
-					</button>
-					<div
-						class="collapse navbar-collapse justify-content-center"
-						id="navbarSupportedContent"
-					>
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="https://docs.kohl.gg/docs/intro"
-								>
-									Docs
-								</a>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="https://docs.kohl.gg/api/MainModule"
-								>
-									API
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="faq"> FAQ </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="staff"> Staff </a>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link active"
-									aria-current="page"
-									href="coordination"
-								>
-									Coordination
-								</a>
-							</li>
-						</ul>
-						<div class="d-flex mx-2 px-2 justify-content-between">
-							<a
-								href="https://github.com/kohls-admin"
-								class="nav-link mx-2"
-							>
-								<i class="fa-brands fa-github"></i>
+<body data-bs-theme="dark">
+	<header class="sticky top-0 z-5 pt-5 pb-5 bg-black text-white">
+		<nav class="navbar navbar-expand-lg bg-black fixed-top">
+			<div class="container-fluid md:justify-content-center">
+				<a class="navbar-brand" href="/">
+					<img class="navbar-icon" style="height: 2rem" src="img/logo-load.svg" alt="Kohl's Admin" />
+				</a>
+				<button class="btn btn-light d-lg-none" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="text-uppercase fw-bolder">Menu</span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://docs.kohl.gg/docs/intro">
+								Docs
 							</a>
-							<a
-								href="https://discord.gg/kohl"
-								class="nav-link mx-2"
-							>
-								<i class="fa-brands fa-discord"></i>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://docs.kohl.gg/api/MainModule">
+								API
 							</a>
-							<a
-								href="https://create.roblox.com/store/asset/172732271/Kohls-Admin-Infinite"
-								class="nav-link mx-2"
-							>
-								<i class="fa-solid fa-download"></i>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="faq"> FAQ </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="staff"> Staff </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="coordination">
+								Coordination
 							</a>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</header>
-
-		<main>
-			<div class="container py-5">
-				<h1 class="text-center mb-5">Coordination Tips</h1>
-
-				<div class="col my-3">
-					<div class="card-body p-4 bg-black text-white">
-						<h3>🎯 Purpose</h3>
-						<ul class="text-muted lead mb-0">
-							<li>
-								Maintain an active and engaged moderation team.
-							</li>
-							<li>
-								Identify and address issues contributing to
-								inactivity.
-							</li>
-							<li>Foster community and support among staff.</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col my-3">
-					<div class="card-body p-4 bg-black text-white">
-						<h3>🔄 Regular Check-ins</h3>
-						<ul class="text-muted lead mb-0">
-							<li>
-								<b>Frequency:</b> Schedule regular check-ins
-								with your staff, both active and inactive.
-							</li>
-							<li>
-								<b>Well-being:</b> Check in on them and address
-								any concerns.
-							</li>
-							<li>
-								<b>Feedback:</b> Gather feedback on their
-								experience and identify areas for improvement.
-							</li>
-							<li>
-								<b>Support:</b> Offer support, guidance, and
-								resources.
-							</li>
-							<li>
-								<b>Recognition:</b> Acknowledge their
-								contributions and show appreciation.
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col my-3">
-					<div class="card-body p-4 bg-black text-white">
-						<h3>🔍 Identifying Inactive Staff</h3>
-						<ul class="text-muted lead mb-0">
-							<li>No moderation actions in the past 2 weeks.</li>
-							<li>
-								Minimal participation in staff discussions or
-								public channels.
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col my-3">
-					<div class="card-body p-4 bg-black text-white">
-						<h3>🤝 Reaching Out</h3>
-						<h4 class="mt-3">Initial Contact</h4>
-						<ul class="text-muted lead mb-0">
-							<li>
-								<b>Direct Message:</b> Send a friendly message
-								expressing appreciation and inquiring about
-								their well-being.
-							</li>
-							<li>
-								<b>Example:</b> "Hi [Name], I hope you're doing
-								well! I noticed you haven't been as active
-								lately, and I wanted to check in and see how
-								you're doing. Is everything okay? Please feel
-								free to share if there's anything I can help
-								with or if you have any questions or concerns."
-							</li>
-						</ul>
-
-						<h4 class="mt-3">Follow-up</h4>
-						<h5 class="lead mt-3">If no response:</h5>
-						<ul class="text-muted lead">
-							<li>After a few days, send a gentle reminder.</li>
-							<li>
-								After two weeks, escalate and notify a Manager.
-							</li>
-						</ul>
-
-						<h5 class="lead mt-3">If they respond:</h5>
-						<ul class="text-muted lead mb-0">
-							<li>
-								<b>Express understanding and support:</b>
-								Acknowledge any challenges they may be facing
-								and offer assistance or resources if needed.
-							</li>
-							<li>
-								<b>Discuss their role and expectations:</b>
-								Remind them of their responsibilities and the
-								importance of their contributions to our team.
-							</li>
-							<li>
-								<b>Explore options:</b> If they're struggling
-								with time commitments or other issues, discuss
-								potential solutions (e.g., adjusting their role,
-								taking a temporary break).
-							</li>
-							<li>
-								<b>Thank them for their honesty:</b> Express
-								your appreciation for their open communication
-								and reiterate your support.
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col my-3">
-					<div class="card-body p-4 bg-black text-white">
-						<h3>💡 Additional Tips</h3>
-						<ul class="text-muted lead mb-0">
-							<li>
-								<b
-									>Create a welcoming and supportive
-									environment.
-								</b>
-							</li>
-							<li>
-								<b>Be proactive:</b> Don't wait for problems to
-								arise before reaching out. Regular check-ins can
-								help prevent issues from escalating.
-							</li>
-							<li>
-								<b>Be flexible:</b> Understand that everyone has
-								different circumstances and commitments. Be
-								willing to work with other staff to find
-								solutions that work for everyone.
-							</li>
-							<li><b>Show appreciation.</b></li>
-						</ul>
-
-						<p class="text-muted lead mt-3">
-							By implementing these strategies, we can create a
-							more engaged and supportive team, leading to a
-							better experience for both staff and the community.
-						</p>
-
-						<p class="font-italic lead mt-3">
-							<b>Remember:</b> Be proactive, understanding, and
-							supportive. Foster open communication to ensure our
-							team remains active and committed!
-						</p>
+						</li>
+					</ul>
+					<div class="d-flex mx-2 px-2 justify-content-between">
+						<a href="https://github.com/kohls-admin" class="nav-link mx-2">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a href="https://discord.gg/kohl" class="nav-link mx-2">
+							<i class="fa-brands fa-discord"></i>
+						</a>
+						<a href="https://create.roblox.com/store/asset/172732271/Kohls-Admin-Infinite"
+							class="nav-link mx-2">
+							<i class="fa-solid fa-download"></i>
+						</a>
 					</div>
 				</div>
 			</div>
-		</main>
+		</nav>
+	</header>
 
-		<footer class="w-100">
-			<div
-				class="d-flex flex-wrap justify-content-center align-items-center py-3 w-100 px-4 bg-black"
-			>
-				<span class="navbar-brand">
-					<svg
-						version="1.1"
-						width="24"
-						height="24"
-						viewBox="0 0 44.142 44.142"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="m37.0711 36.9711v-29.9l-30 30h5l21.464-21.464v16.464l-13.232-13.232 11.768-11.768h-5l-16.464 16.464v-16.464h-3.536v25l10.732-10.732 15.732 15.732h3.536z"
-							fill="#fff"
-						/>
-					</svg>
-					&copy; 2024
-					<a
-						class="link-light underline-opacity-0"
-						style="text-decoration: none"
-						href="https://github.com/kohls-admin"
-						>Kohl</a
-					>
-				</span>
+	<main>
+		<div class="container py-5">
+			<h1 class="text-center mb-5">Coordination Tips</h1>
+
+			<div class="col my-3">
+				<div class="card-body p-4 bg-black text-white">
+					<h3>🎯 Purpose</h3>
+					<ul class="text-muted lead mb-0">
+						<li>
+							Maintain an active and engaged moderation team.
+						</li>
+						<li>
+							Identify and address issues contributing to
+							inactivity.
+						</li>
+						<li>Foster community and support among staff.</li>
+					</ul>
+				</div>
 			</div>
-		</footer>
 
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/data.js"></script>
-	</body>
+			<div class="col my-3">
+				<div class="card-body p-4 bg-black text-white">
+					<h3>🔄 Regular Check-ins</h3>
+					<ul class="text-muted lead mb-0">
+						<li>
+							<b>Frequency:</b> Schedule regular check-ins
+							with your staff, both active and inactive.
+						</li>
+						<li>
+							<b>Well-being:</b> Check in on them and address
+							any concerns.
+						</li>
+						<li>
+							<b>Feedback:</b> Gather feedback on their
+							experience and identify areas for improvement.
+						</li>
+						<li>
+							<b>Support:</b> Offer support, guidance, and
+							resources.
+						</li>
+						<li>
+							<b>Recognition:</b> Acknowledge their
+							contributions and show appreciation.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col my-3">
+				<div class="card-body p-4 bg-black text-white">
+					<h3>🔍 Identifying Inactive Staff</h3>
+					<ul class="text-muted lead mb-0">
+						<li>No moderation actions in the past 2 weeks.</li>
+						<li>
+							Minimal participation in staff discussions or
+							public channels.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col my-3">
+				<div class="card-body p-4 bg-black text-white">
+					<h3>🤝 Reaching Out</h3>
+					<h4 class="mt-3">Initial Contact</h4>
+					<ul class="text-muted lead mb-0">
+						<li>
+							<b>Direct Message:</b> Send a friendly message
+							expressing appreciation and inquiring about
+							their well-being.
+						</li>
+						<li>
+							<b>Example:</b> "Hi [Name], I hope you're doing
+							well! I noticed you haven't been as active
+							lately, and I wanted to check in and see how
+							you're doing. Is everything okay? Please feel
+							free to share if there's anything I can help
+							with or if you have any questions or concerns."
+						</li>
+					</ul>
+
+					<h4 class="mt-3">Follow-up</h4>
+					<h5 class="lead mt-3">If no response:</h5>
+					<ul class="text-muted lead">
+						<li>After a few days, send a gentle reminder.</li>
+						<li>
+							After two weeks, escalate and notify a Manager.
+						</li>
+					</ul>
+
+					<h5 class="lead mt-3">If they respond:</h5>
+					<ul class="text-muted lead mb-0">
+						<li>
+							<b>Express understanding and support:</b>
+							Acknowledge any challenges they may be facing
+							and offer assistance or resources if needed.
+						</li>
+						<li>
+							<b>Discuss their role and expectations:</b>
+							Remind them of their responsibilities and the
+							importance of their contributions to our team.
+						</li>
+						<li>
+							<b>Explore options:</b> If they're struggling
+							with time commitments or other issues, discuss
+							potential solutions (e.g., adjusting their role,
+							taking a temporary break).
+						</li>
+						<li>
+							<b>Thank them for their honesty:</b> Express
+							your appreciation for their open communication
+							and reiterate your support.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col my-3">
+				<div class="card-body p-4 bg-black text-white">
+					<h3>💡 Additional Tips</h3>
+					<ul class="text-muted lead mb-0">
+						<li>
+							<b>Create a welcoming and supportive
+								environment.
+							</b>
+						</li>
+						<li>
+							<b>Be proactive:</b> Don't wait for problems to
+							arise before reaching out. Regular check-ins can
+							help prevent issues from escalating.
+						</li>
+						<li>
+							<b>Be flexible:</b> Understand that everyone has
+							different circumstances and commitments. Be
+							willing to work with other staff to find
+							solutions that work for everyone.
+						</li>
+						<li><b>Show appreciation.</b></li>
+					</ul>
+
+					<p class="text-muted lead mt-3">
+						By implementing these strategies, we can create a
+						more engaged and supportive team, leading to a
+						better experience for both staff and the community.
+					</p>
+
+					<p class="font-italic lead mt-3">
+						<b>Remember:</b> Be proactive, understanding, and
+						supportive. Foster open communication to ensure our
+						team remains active and committed!
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="w-100">
+		<div class="d-flex flex-wrap justify-content-center align-items-center py-3 w-100 px-4 bg-black">
+			<span class="navbar-brand">
+				<svg version="1.1" width="24" height="24" viewBox="0 0 44.142 44.142"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="m37.0711 36.9711v-29.9l-30 30h5l21.464-21.464v16.464l-13.232-13.232 11.768-11.768h-5l-16.464 16.464v-16.464h-3.536v25l10.732-10.732 15.732 15.732h3.536z"
+						fill="#fff" />
+				</svg>
+				&copy; 2024
+				<a class="link-light underline-opacity-0" style="text-decoration: none"
+					href="https://github.com/kohls-admin">Kohl</a>
+			</span>
+		</div>
+	</footer>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/data.js"></script>
+</body>
+
 </html>
