@@ -1,0 +1,106 @@
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+	const links = document.querySelectorAll(".nav-links a");
+	links.forEach((link) => {
+		link.setAttribute("data-text", link.textContent);
+	});
+
+	const mobileBtn = document.querySelector(".mobile-menu-btn");
+	const navLinks = document.querySelector(".nav-links");
+	mobileBtn.addEventListener("click", () => {
+		navLinks.classList.toggle("active");
+	});
+
+	document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+		anchor.addEventListener("click", function (e) {
+			e.preventDefault();
+			document
+				.querySelector(this.getAttribute("href"))
+				.scrollIntoView({ behavior: "smooth" });
+			if (window.innerWidth <= 768) {
+				navLinks.classList.remove("active");
+			}
+		});
+	});
+
+	const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("active");
+			} else {
+				entry.target.classList.remove("active");
+			}
+		});
+	}, observerOptions);
+	document
+		.querySelectorAll(".reveal, .reveal-fade, .reveal-left, .reveal-right")
+		.forEach((el) => {
+			observer.observe(el);
+		});
+
+	const statsSection = document.querySelector(".stats-section");
+	const statNumbers = document.querySelectorAll(".stat-number");
+
+	function startCount(el, index) {
+		const target = parseInt(el.dataset.target, 10);
+		const suffix = el.dataset.suffix || "";
+		const duration = 2000 + (index * 400);
+		if (el._animationId) cancelAnimationFrame(el._animationId);
+		const startTime = performance.now();
+		let lastRenderedValue = -1;
+
+		function update(currentTime) {
+			const elapsed = currentTime - startTime;
+			const progress = Math.min(elapsed / duration, 1);
+			const easeProgress = Math.sqrt(1 - Math.pow(progress - 1, 2));
+			const current = Math.floor(easeProgress * target);
+			if (current !== lastRenderedValue) {
+				el.textContent = current + suffix;
+				lastRenderedValue = current;
+			}
+			if (progress < 1) {
+				el._animationId = requestAnimationFrame(update);
+			} else if (lastRenderedValue !== target) {
+				el.textContent = target + suffix;
+			}
+		}
+		el._animationId = requestAnimationFrame(update);
+	}
+
+	const statsObserver = new IntersectionObserver(
+		(entries) => {
+			if (entries[0].isIntersecting) {
+				statNumbers.forEach((num, index) => startCount(num, index));
+			}
+		},
+		{ threshold: 0.5 },
+	);
+
+	if (statsSection) {
+		statsObserver.observe(statsSection);
+	}
+});
+
+const loadAnalytics = () => {
+	if (window.gaLoaded) return;
+	window.gaLoaded = true;
+
+	const GA_ID = 'G-19NPCLMX36';
+	const script = document.createElement('script');
+	script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+	script.async = true;
+	document.head.appendChild(script);
+
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+	gtag('config', GA_ID);
+};
+
+['click', 'scroll', 'mousemove', 'touchstart'].forEach(event => {
+	window.addEventListener(event, loadAnalytics, { once: true });
+});
+
+</script>
