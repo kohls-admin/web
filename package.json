@@ -1,0 +1,20 @@
+{
+	"name": "kohl.gg",
+	"private": true,
+	"version": "0.0.0",
+	"source": "src/*.html",
+	"scripts": {
+		"clean": "rm -rf dist",
+		"start": "parcel",
+		"build": "npm run clean && parcel build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.3.0",
+		"parcel": "^2.14.0",
+		"parcel-reporter-static-files-copy": "^1.5.3",
+		"posthtml": "^0.16.7",
+		"posthtml-include": "^2.0.1"
+	}
+}
