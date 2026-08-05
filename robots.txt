@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /staff.html
-Disallow: /coordination.html
+Disallow: /moderation.html
 
-Sitemap: https://kohl.gg/sitemap.xml
+Sitemap: https://admin.kohl.gg/sitemap.xml
